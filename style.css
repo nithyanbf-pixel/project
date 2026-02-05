@@ -1,0 +1,357 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* SLIDES */
+.slide {
+  display: none;
+  min-height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.slide.active {
+  display: block;
+  animation: slideFade 0.6s ease;
+}
+
+/* BACKGROUNDS */
+.slide-romantic {
+  background:
+    radial-gradient(circle at top left, #ffd6e8 0%, transparent 40%),
+    radial-gradient(circle at bottom right, #ffeef5 0%, transparent 40%),
+    linear-gradient(135deg, #ffe6f0, #ffffff);
+}
+
+.slide-soft {
+  background:
+    radial-gradient(circle at top right, #ffe6eb 0%, transparent 45%),
+    linear-gradient(135deg, #fff0f5, #ffffff);
+}
+
+/* SIGN IMAGE */
+.sign-wrapper {
+  position: relative;
+  width: 520px;
+  max-width: 90%;
+  margin: 40px auto;
+}
+
+.sign-image {
+  width: 100%;
+  display: block;
+}
+
+.sign-text {
+  position: absolute;
+  top: 135px;
+  left: 4px;
+  width: 260px;
+  text-align: center;
+  font-family: "Comic Sans MS", "Poppins", cursive;
+  color: #333;
+  transform: rotate(-9deg);
+}
+
+.sign-text h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.sign-text p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+button {
+  margin-top: 30px;
+  padding: 12px 26px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff8fa3;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff6f91;
+}
+
+/* QUESTION SLIDE */
+.question-box {
+  max-width: 480px;
+  margin: 80px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.question-box h2 {
+  margin-bottom: 25px;
+}
+
+/* OPTIONS */
+.option {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffd1dc;
+  color: #333;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #ffb6c1;
+}
+
+.option.correct {
+  background-color: #6bcf95;
+  color: white;
+}
+
+.option.wrong {
+  background-color: #ff7a7a;
+  color: white;
+}
+
+.emoji {
+  font-size: 40px;
+  margin-top: 20px;
+  display: none;
+}
+
+/* MEMORY CARD (YOUR FORMAT) */
+.memory-card {
+  width: 600px;
+  max-width: 90%;
+  margin: 100px auto;
+  padding: 18px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.memory-card.horizontal {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+}
+
+/* PHOTO */
+.photo-wrapper.small {
+  width: 150px;
+  flex-shrink: 0;
+  transform: rotate(-4deg);
+}
+
+.photo-wrapper.small img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* TEXT */
+.memory-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ANIMATION */
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* VIDEO STYLE FOR MEMORY SLIDES */
+.memory-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+/* JOURNEY SLIDE */
+.journey-title {
+  text-align: center;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.journey {
+  width: 90%;
+  max-width: 420px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  position: relative;
+}
+
+/* CURVED ROUTE MAP */
+.journey {
+  position: relative;
+  background-image:
+    radial-gradient(circle at 30% 10%, #ffb6c1 2px, transparent 3px),
+    radial-gradient(circle at 60% 25%, #ffb6c1 2px, transparent 3px),
+    radial-gradient(circle at 40% 45%, #ffb6c1 2px, transparent 3px),
+    radial-gradient(circle at 70% 65%, #ffb6c1 2px, transparent 3px),
+    radial-gradient(circle at 50% 85%, #ffb6c1 2px, transparent 3px);
+  background-repeat: no-repeat;
+}
+
+/* Offset steps to follow the curve */
+.journey-step:nth-child(2)  { margin-left: 40px; }
+.journey-step:nth-child(4)  { margin-left: 80px; }
+.journey-step:nth-child(6)  { margin-left: 30px; }
+.journey-step:nth-child(8)  { margin-left: 90px; }
+.journey-step:nth-child(10) { margin-left: 50px; }
+
+/* Offset text boxes slightly */
+.journey-text {
+  margin-left: 60px;
+}
+
+/* Text boxes */
+.journey-text {
+  margin-left: 55px;
+  background: #ffffff;
+  padding: 14px 18px;
+  border-radius: 18px;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.journey-text.end {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Image / video step */
+.journey-step {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: 5px;
+}
+
+/* Image & video styling */
+.journey-step img,
+.journey-step video {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 3px solid #fff;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  background: #fff;
+}
+
+/* Text beside media */
+.journey-step span {
+  font-size: 14px;
+  color: #444;
+  background: rgba(255,255,255,0.85);
+  padding: 8px 14px;
+  border-radius: 18px;
+}
+/* JOURNEY STEP ANIMATION */
+.journey > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.journey > *.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide.active {
+  display: block;
+  animation: softZoom 0.8s ease;
+}
+
+@keyframes softZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 143, 163, 0.4);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+
+/* IMAGE & VIDEO POLISH */
+img,
+video {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Subtle hover lift (desktop only, harmless on mobile) */
+img:hover,
+video:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+/* Prevent overflow issues */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.memory-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+}
+
+/* PROGRESS INDICATOR */
+#progress-indicator {
+  position: fixed;
+  top: 16px;
+  right: 18px;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #555;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}

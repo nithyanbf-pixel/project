@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress-indicator">1 / 1</div>
+<!-- SLIDE 1 -->
+<section class="slide active slide-romantic">
+
+  <div class="sign-wrapper">
+    <img src="images/doll.png" alt="bunny sign" class="sign-image">
+
+    <div class="sign-text">
+      <h2>Hello Kannaya 💖</h2>
+      <p>A small surprise from me 🥰.</p>
+      <p>Click start & go to next</p>
+    </div>
+  </div>
+
+  <button onclick="nextSlide()">Start</button>
+</section>
+
+<!-- SLIDE 2 : MCQ QUESTION -->
+<section class="slide slide-soft">
+
+  <div class="question-box">
+    <h2>When did we first meet after getting into a relationship?</h2>
+    <p>Answer chesi next slide ki vellandi abbai garu.</p>
+    <button class="option" onclick="checkAnswer(this, true)">
+      5th November 2023
+    </button>
+
+    <button class="option" onclick="checkAnswer(this, false)">
+      25th December 2023
+    </button>
+
+    <div class="emoji">🥰</div>
+  </div>
+
+</section>
+
+<!-- SLIDE 3 : PHOTO BESIDE TEXT (YOUR FORMAT) -->
+<section class="slide slide-romantic">
+
+  <div class="memory-card horizontal">
+
+    <div class="photo-wrapper small">
+      <img src="images/pic1.jpeg" alt="memory photo">
+    </div>
+
+    <div class="memory-text">
+        <h2>Yevandoi Abbaigaru gurthundha...</h2>
+      Manam okaru ante okariki istam ani telisaka first 
+      time kalisindhi nenu na long memo kosam vachinapudu.
+      Mana First Restaurant Date and our first kiss 🫣.
+    </div>
+
+  </div>
+
+  <button onclick="nextSlide()">Next</button>
+</section>
+
+<!-- SLIDE 4 : MCQ QUESTION -->
+<section class="slide slide-soft">
+
+  <div class="question-box">
+    <h2>Manam iddaram kalisi vellina movie gurthudha mastaru..?</h2>
+    <p>Answer chesi next slide ki vellandi abbai garu.</p>
+    <button class="option" onclick="checkAnswer(this, true)">
+      Tillu Square
+    </button>
+
+    <button class="option" onclick="checkAnswer(this, false)">
+      The Family Star
+    </button>
+
+    <div class="emoji">☺️</div>
+  </div>
+
+</section>
+
+<!-- SLIDE 5 : PHOTO BESIDE TEXT (YOUR FORMAT) -->
+<section class="slide slide-romantic">
+
+  <div class="memory-card horizontal">
+
+    <div class="photo-wrapper small">
+      <img src="images/pic2.jpeg" alt="memory photo">
+    </div>
+
+    <div class="memory-text">
+        <h2>The Third Meet</h2>
+      Idhi third meet ayte second meet epdu ayindhi abba...
+      Second time : first time kalisaka chudakunda undalekha 
+      harini ni kalavataniki ani cheppi intlo oka yuddham chesi
+      vachi kalisani dec 25th 2024.Aa tarvatha vijayawada plan 
+      veste flop ayindhi inka aa tarvatha 28th April ma junior 
+      daggara books tisukovataniki ani cheppi vachanu...Our
+      First hug was on this day in the bus stop.
+      <h2>The Movie Date 🥰.</h2>
+    </div>
+
+  </div>
+
+  <button onclick="nextSlide()">Next</button>
+</section>
+
+<!-- SLIDE 6 : MCQ QUESTION -->
+<section class="slide slide-soft">
+
+  <div class="question-box">
+    <h2>Ma intiki epdu vachavo gurthundha Kannaya?</h2>
+    <p>Answer chesi next slide ki vellandi abbai garu.</p>
+    <button class="option" onclick="checkAnswer(this, false)">
+      JULY 28th 2024
+    </button>
+
+    <button class="option" onclick="checkAnswer(this, true)">
+      JUNE 28th 2024
+    </button>
+
+    <div class="emoji">❤️</div>
+  </div>
+
+</section>
+
+<!-- SLIDE 7 : PHOTO BESIDE TEXT (YOUR FORMAT) -->
+<section class="slide slide-romantic">
+
+  <div class="memory-card horizontal">
+
+    <div class="photo-wrapper small">
+      <img src="images/pic3.jpeg" alt="memory photo">
+    </div>
+
+    <div class="memory-text">
+        <h2>The Fourth Meet</h2>
+      The Home date..😂.Modicare products meeting ani cheppi
+      ma amma ramante,me nanna ni kuda nene oppinchanu mastaru.
+      3 days nenu aslu marchipolenu,one of the most memorable
+      Everything happened in these three days 🫣.Iddaram kalisi
+      gudiki vellam,kalisi cricket chusam kalisi movies chusam.
+      The days which I never forget
+      <h2>The Temple Date.</h2>
+    </div>
+
+  </div>
+
+  <button onclick="nextSlide()">Next</button>
+</section>
+
+<!-- SLIDE 8 : MCQ QUESTION -->
+<section class="slide slide-soft">
+
+  <div class="question-box">
+    <h2>Na birthday epdo gurthundha Kannaya?</h2>
+    <p>Answer chesi next slide ki vellandi abbai garu.</p>
+    <button class="option" onclick="checkAnswer(this, true)">
+      March 30th 2005
+    </button>
+
+    <button class="option" onclick="checkAnswer(this, false)">
+      March 30th 2004
+    </button>
+
+    <div class="emoji">💞</div>
+  </div>
+
+</section>
+
+<!-- SLIDE 9 : PHOTO BESIDE TEXT (YOUR FORMAT) -->
+<section class="slide slide-romantic">
+
+  <div class="memory-card horizontal">
+
+    <div class="photo-wrapper small">
+      <img src="images/pic4.jpeg" alt="memory photo">
+    </div>
+
+    <div class="memory-text">
+        <h2>The Sad Moment 😞</h2>
+      Birthday gurinchi endhuku adigindhi ee pilla....
+      March 30th 2025 na birthday roju kaludham anukunnam
+      kani kudaraledhu neeku debba thagilindhi 22nd march
+      Entha yedichano telsa kannaya,chala bhayam vesindhi.
+      First time long distance lo asalu undakudadhu ani
+      anipinchindhi..ventane chudali ani kani kalavataniki
+      pakkana kadhu intlo valani opinchi train ekkudham ane 
+      time ki discharge chesaru ani cheppav intiki vastha 
+      ante oddu annav malli tarvatha ne surgery ayaka hsptl
+      lo kalisa chala yedupu vachesindhi kani sir garu emo
+      edavaku ikkadiki vachi ani mundhu roje instructions.
+    </div>
+
+  </div>
+
+  <button onclick="nextSlide()">Next</button>
+</section>
+
+<!-- SLIDE 10 : VIDEO BESIDE TEXT -->
+<section class="slide slide-romantic">
+
+  <div class="memory-card horizontal">
+
+    <div class="photo-wrapper small">
+      <video class="memory-video" autoplay muted loop playsinline>
+        <source src="videos/memory2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="memory-text">
+      This the last time we met...
+      Chelli daggarakani vachi kalisanu
+      Malli epdu kalustamo telidhu.....
+      Waiting For the next meet
+      Click on memories for next slide.
+    </div>
+
+  </div>
+
+  <button onclick="nextSlide()">Memories</button>
+</section>
+
+<!-- SLIDE 11 : JOURNEY MAP -->
+<section class="slide slide-romantic">
+
+  <h2 class="journey-title">Our Journey ❤️</h2>
+
+  <div class="journey">
+
+    <!-- TEXT BOX 1 -->
+    <div class="journey-text">
+      This is where our story truly began…
+      <h2>May 2023</h2>
+    </div>
+
+    <!-- IMAGE 1 -->
+    <div class="journey-step">
+      <img src="images/pic1.jpeg">
+      <span>05 Nov 2023 – The Restaurant Date</span>
+    </div>
+
+    <!-- TEXT BOX 2 -->
+    <div class="journey-text">
+      25th December 2023 - The Second Meet 💫
+    </div>
+
+    <!-- IMAGE 2 -->
+    <div class="journey-step">
+      <img src="images/pic2.jpeg">
+      <span>28th April 2024 - The Movie Date</span>
+    </div>
+
+    <!-- IMAGE 3 -->
+    <div class="journey-step">
+      <img src="images/pic3.jpeg">
+      <span>The Temple date an Everything</span>
+      <span>Meet in My Home,Beatiful memories.</span>
+    </div>
+  </div>
+  <button onclick="nextSlide()">Memories</button>
+</section>
+
+<!-- SLIDE 11 : JOURNEY MAP -->
+<section class="slide slide-romantic">
+  <div class="journey">
+    <!-- IMAGE 4 -->
+    <div class="journey-step">
+      <img src="images/pic5.jpeg">
+      <span>August 2024 - The Mall Date</span>
+    </div>
+
+    <!-- IMAGE 5 -->
+    <div class="journey-step">
+      <img src="images/pic6.jpeg">
+      <span>November 2024 - The IceCream Date</span>
+    </div>
+
+    <!-- IMAGE 6 -->
+    <div class="journey-step">
+      <img src="images/pic4.jpeg">
+      <span>April 2025 - Meet in hospital</span>
+    </div>
+
+    <!-- VIDEO 1 -->
+    <div class="journey-step">
+      <video autoplay muted loop playsinline>
+        <source src="videos/memory2.mp4" type="video/mp4">
+      </video>
+      <span>June 2025 - A meet with Mom 😂</span>
+    </div>
+
+    <!-- FINAL TEXT BOX -->
+    <div class="journey-text end">
+      From strangers to something special 💫
+      Late night talks
+      Unforgettable memories
+      Every smile mattered
+      Growing closer every day
+      Moments that feel alive
+      Memories I replay in my heart
+      And this journey……💖
+    </div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
